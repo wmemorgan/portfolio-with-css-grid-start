@@ -524,6 +524,26 @@ figure {
   .contact h1 {
     text-align: center; }
 
+form {
+  display: flex;
+  flex-direction: column; }
+  @supports (display: grid) {
+    @media (min-width: 50em) {
+      form {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-areas: "name    email" "message message" "   .    button"; }
+        form .name {
+          grid-area: name; }
+        form .email {
+          grid-area: email; }
+        form .message {
+          grid-area: message; }
+          form .message textarea {
+            height: 10em; }
+        form .button {
+          grid-area: button; } } }
+
 label {
   display: block;
   margin-top: 1em;
