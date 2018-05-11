@@ -7,7 +7,7 @@
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -30,8 +30,11 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 1px solid $dark-blue;
   text-align: center;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $dark-blue;
+  }
 }
 
 nav li:hover {
@@ -52,10 +55,15 @@ nav a {
 }
 
 .nav-is-open {
+  height: 100vh;
+  overflow-y: hidden;
+
   nav {
     transform: translateX(0);
     transition: transform ease-out 300ms;
   }
+
+
 
   .container-all {
     transform: translateX(80%);
@@ -74,6 +82,6 @@ nav a {
   }
 }
 
-.container-all {
-  transition: transform ease-out 300ms;
-}
+// .container-all {
+//   transition: transform ease-out 300ms;
+// }
