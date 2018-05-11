@@ -13,6 +13,8 @@ nav {
   left: 0;
   right: 15%;
   z-index: 10;
+
+  transform: translateX(-100%);
 }
 
 nav ul {
@@ -43,4 +45,35 @@ nav a {
   padding: calc(100vh/8) 0;
   line-height: 0;
   width: 100%;
+}
+
+.close-icon {
+  display: none;
+}
+
+.nav-is-open {
+  nav {
+    transform: translateX(0);
+    transition: transform ease-out 300ms;
+  }
+
+  .container-all {
+    transform: translateX(80%);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .close-icon {
+    display: block;
+  }
+
+  .menu-button {
+    transform: translateX(-80%);
+  }
+}
+
+.container-all {
+  transition: transform ease-out 300ms;
 }

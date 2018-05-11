@@ -330,7 +330,8 @@ nav {
   bottom: 0;
   left: 0;
   right: 15%;
-  z-index: 10; }
+  z-index: 10;
+  transform: translateX(-100%); }
 
 nav ul {
   margin: 0;
@@ -363,6 +364,28 @@ nav a {
   padding: calc(100vh/8) 0;
   line-height: 0;
   width: 100%; }
+
+.close-icon {
+  display: none; }
+
+.nav-is-open nav {
+  transform: translateX(0);
+  transition: transform ease-out 300ms; }
+
+.nav-is-open .container-all {
+  transform: translateX(80%); }
+
+.nav-is-open .hamburger {
+  display: none; }
+
+.nav-is-open .close-icon {
+  display: block; }
+
+.nav-is-open .menu-button {
+  transform: translateX(-80%); }
+
+.container-all {
+  transition: transform ease-out 300ms; }
 
 .welcome {
   background-image: url(../img/header-bg.png);
