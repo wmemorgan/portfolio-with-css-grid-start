@@ -134,13 +134,30 @@ figure {
   text-align: left;
   padding: 5em 0;
   margin-bottom: 2em;
-}
-
-.portfolio-header:nth-of-type(1) {
-  background-image: url(../img/portfolio-01.jpg);
   background-size: cover;
   background-position: center;
 }
+
+.header-1 {
+  background-image: url(../img/portfolio-01.jpg);
+}
+
+.header-2 {
+  background-image: url(../img/portfolio-02.jpg);
+}
+
+.header-3  {
+  background-image: url(../img/portfolio-03.jpg);
+}
+
+.header-4 {
+  background-image: url(../img/portfolio-04.jpg);
+}
+
+.header-5 {
+  background-image: url(../img/portfolio-05.jpg);
+}
+
 
 .portfolio-title-box {
   background: rgba($accent, 0.75);
@@ -194,4 +211,14 @@ figure {
     float: right;
     margin-left: 2em;
   }
+}
+
+@keyframes modalIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes modalOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
