@@ -527,7 +527,7 @@ figure {
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  flex: 1 1 10rem; }
+  flex: 1 1 20rem; }
   .portfolio-item img {
     display: block;
     width: 100%; }
@@ -537,7 +537,7 @@ figure {
     bottom: 0;
     right: 0;
     left: 0;
-    padding: 2em;
+    padding: 1em;
     background: rgba(3, 175, 194, 0.75);
     color: #ffffff;
     text-align: left;
@@ -595,7 +595,10 @@ figure {
   background: white;
   box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: none; }
+  .portfolio-modal.is-open {
+    display: block; }
 
 .modal-close {
   background: white;
